@@ -1,0 +1,25 @@
+CREATE DATABASE top_10_books;
+USE top_10_books;
+
+CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    year_published YEAR,
+    genre VARCHAR(100),
+    publisher VARCHAR(255),
+    ratings DECIMAL(3, 2) CHECK (ratings BETWEEN 0.00 AND 5.00)
+);
+
+INSERT INTO books (title, author, year_published, genre, publisher, ratings)
+VALUES
+('A Tale of Two Cities', 'Charles Dickens', 1859, 'Fiction', 'Penguin Books', ratings),
+('The Lord of the Rings', 'J.R.R. Tolkien', 1954, 'Fantasy', 'Houghton Mifflin Harcourt', ratings),
+('The Little Prince', 'Antoine de Saint-Exupéry', 1943, 'Fiction', 'Harcourt, Inc', ratings),
+('The Hobbit', 'J.R.R. Tolkien', 1937, 'Fantasy', 'HarperCollins Childrens Books', ratings),
+('Dream of the Red Chamber', 'Cao Xueqin', 1761, 'Fiction', 'Anchor', ratings),
+('And Then There Were None', 'Agatha CHristie', 1939, 'Mystery', 'St.Martins Griffin', ratings),
+('The Lion, the Witch, and the Wardrobe', 'C.S. Lewis', 1950, 'Fantasy', 'HarperCollins Publishers', ratings),
+('She: A History of Adventure', 'H. Rider Haffard', 1887, 'Fantasy', 'Oxford University Press', ratings),
+('The Da Vinci Code', 'Dan Brown', 2003, 'Fiction', 'Anchor', ratings),
+('Think and Grow Rich', 'Napolean Hill', 1937, 'Self Help', 'TarcherPerigee', ratings);
