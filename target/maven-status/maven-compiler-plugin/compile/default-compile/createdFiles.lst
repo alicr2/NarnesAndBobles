@@ -1,0 +1,15 @@
+book\ratings\project\controller\LinkGeneratorController.class
+book\ratings\project\repository\RatingRepository.class
+book\ratings\project\BookRatingApplication.class
+book\ratings\project\MyApplication.class
+book\ratings\project\model\Comment.class
+book\ratings\project\service\RatingService.class
+book\ratings\project\controller\BookRatingController.class
+book\ratings\project\repository\BookRepository.class
+book\ratings\project\service\CommentService.class
+book\ratings\project\repository\CommentRepository.class
+book\ratings\project\model\Rating.class
+book\ratings\project\dto\RatingDto.class
+book\ratings\project\model\Book.class
+book\ratings\project\dto\CommentDto.class
+book\ratings\project\service\BookService.class
