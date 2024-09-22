@@ -79,4 +79,6 @@ public class BookService {
         double sum = ratings.stream().mapToDouble(Rating::getRating).sum();
         return sum / ratings.size();
     }
+
+
 }

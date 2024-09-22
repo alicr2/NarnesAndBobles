@@ -42,9 +42,11 @@ public class CommentService {
     public List<CommentDto> getCommentsForBook(Long bookId) {
         List<Comment> comments = commentRepository.findByBook_Id(bookId);
         return comments.stream()
-                .map(this::convertToDto)  // Using the conversion method
+                .map(this::convertToDto)
                 .collect(Collectors.toList());
     }
+
+
 
     public Comment convertToEntity(CommentDto commentDto, Book book) {
         Comment comment = new Comment();
