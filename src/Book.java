@@ -1,3 +1,5 @@
+package geekText;
+
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -8,10 +10,18 @@ import javax.persistence.Id;
 @Entity
 @Data
 public class Book {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String title;
     private String author;
     private double price;
+
+    // Additional fields from the remote version
+    private int yearPublished;
+    private String genre;
+    private String publisher;
+    private double ratings;
 }
