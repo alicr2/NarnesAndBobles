@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
+
 
 @Service
 public class RatingService {
@@ -31,14 +33,23 @@ public class RatingService {
         rating.setRating(ratingDto.getRating());
         rating.setUserId(ratingDto.getUserId());
         rating.setDate(ratingDto.getDate());
-        Book book =bookRepository.findById(bookId).orElseThrow(()-> new RuntimeException("Book not found"));
+        Book book = bookRepository.findById(bookId)
+                .orElseThrow(() -> new RuntimeException("Book not found"));
+        rating.setBook(book);
 
         ratingRepository.save(rating);
     }
-    public List<Rating> getRatingsForBook(Long bookId) {
 
-        return ratingRepository.findByBookId(bookId);
-    }
+public List<RatingDto> getRatingsForBook(Long bookId) {
+    List<Rating> ratings = ratingRepository.findByBookId(bookId); // Assuming this method exists in your repository
+    return ratings.stream()
+            .map(rating -> new RatingDto(
+                    rating.getRating(),
+                    rating.getUserId(),
+                    rating.getDate()))
+            .collect(Collectors.toList());
+}
+
 
 
     public double calculateAverageRating(Long bookId) {

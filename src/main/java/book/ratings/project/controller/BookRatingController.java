@@ -46,12 +46,19 @@ public class BookRatingController {
         return ResponseEntity.ok(books);
     }
 
-    // Get a book by its ID
+
     @GetMapping("/{bookId}")
     public ResponseEntity<Book> getBookById(@PathVariable Long bookId) {
         Book book = bookService.getBookById(bookId);
         return ResponseEntity.ok(book);
     }
+
+    @GetMapping("/{bookId}/ratings")
+    public ResponseEntity<List<RatingDto>> getRatingsForBook(@PathVariable Long bookId) {
+        List<RatingDto> ratings = ratingService.getRatingsForBook(bookId);  // Assuming this method exists in RatingService
+        return ResponseEntity.ok(ratings);
+    }
+
 
 
     @GetMapping("/{bookId}/average-rating")
@@ -59,4 +66,6 @@ public class BookRatingController {
         double averageRating = ratingService.calculateAverageRating(bookId);
         return ResponseEntity.ok(averageRating);
     }
+
+
 }

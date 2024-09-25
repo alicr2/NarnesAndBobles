@@ -16,6 +16,12 @@ public class RatingDto {
 
     private Long id;
 
+    public RatingDto(double rating, Long userId, LocalDateTime date) {
+        this.rating = rating;
+        this.userId = userId;
+        this.date = date;
+    }
+
     public Long getUserId(){
         return userId;
     }
