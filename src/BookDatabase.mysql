@@ -18,7 +18,7 @@ VALUES
 ('The Little Prince', 'Antoine de Saint-Exupéry', 1943, 'Fiction', 'Harcourt, Inc', 4.33),
 ('The Hobbit', 'J.R.R. Tolkien', 1937, 'Fantasy', 'HarperCollins Childrens Books', 4.29),
 ('Dream of the Red Chamber', 'Cao Xueqin', 1761, 'Fiction', 'Anchor', 4.18),
-('And Then There Were None', 'Agatha CHristie', 1939, 'Mystery', 'St.Martins Griffin', 4.28),
+('And Then There Were None', 'Agatha Christie', 1939, 'Mystery', 'St.Martins Griffin', 4.28),
 ('The Lion, the Witch, and the Wardrobe', 'C.S. Lewis', 1950, 'Fantasy', 'HarperCollins Publishers', 4.24),
 ('She: A History of Adventure', 'H. Rider Haffard', 1887, 'Fantasy', 'Oxford University Press', 3.57),
 ('The Da Vinci Code', 'Dan Brown', 2003, 'Fiction', 'Anchor', 3.92),

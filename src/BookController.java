@@ -14,9 +14,12 @@ public class BookController {
     @Autowired
     private BookRepository bookRepository;
 
-    // retrieves Top 10 Best Sellers
+    // Retrieve Top 10 Best Sellers (Books with the most copies sold)
     @GetMapping("/top-sellers")
     public List<Book> getTopSellers() {
         return bookRepository.findTop10ByOrderByCopiesSoldDesc();
+
+        public List<Book> getBooksByRating(@RequestParam double rating) {
+            return bookRepository.findByRatingGreaterThanEqual(rating);
     }
 }

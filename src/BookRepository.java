@@ -26,5 +26,9 @@ public class BookRepository {
             book.setRatings(rs.getDouble("ratings"));
             return book;
         });
+
+        public interface BookRepository extends JpaRepository<Book, Long> {
+            List<Book> findByRatingGreaterThanEqual(double rating);
+        }
     }
 }
