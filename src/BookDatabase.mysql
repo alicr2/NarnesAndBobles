@@ -12,7 +12,6 @@ CREATE TABLE books (
     ratings DECIMAL(3, 2) CHECK (ratings BETWEEN 0.00 AND 5.00)
 );
 
--- Insert book records
 INSERT INTO books (title, author, year_published, genre, publisher, copies_sold, ratings)
 VALUES
 ('A Tale of Two Cities', 'Charles Dickens', 1859, 'Fiction', 'Penguin Books', 201000000, 3.87),
