@@ -25,4 +25,5 @@ VALUES
 ('Alices Adventures in Wonderland', 'Lewis Carroll', 1865, 'Fantasy', 'Penguin Group', 100000000, 4.06),
 ('The Lion, the Witch, and the Wardrobe', 'C.S. Lewis', 1950, 'Fantasy', 'HarperCollins Publishers', 85000000, 4.24),
 ('She: A History of Adventure', 'H. Rider Haffard', 1887, 'Fantasy', 'Oxford University Press', 83000000, 3.57),
-('The Da Vinci Code', 'Dan Brown', 2003, 'Fiction', 'Anchor', 80000000, 3.92);
+('The Da Vinci Code', 'Dan Brown', 2003, 'Fiction', 'Anchor', 80000000, 3.92),
+('Harry Potter and the Chamber of Secrets', 'J.K. Rowling', 1998, 'Fantasy', 'Pottermore Publishing', 77000000, 4.4);
