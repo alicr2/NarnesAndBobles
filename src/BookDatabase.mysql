@@ -1,4 +1,4 @@
-CREATE DATABASE top_10_books;
+CREATE DATABASE IF NOT EXISTS top_10_books;
 USE top_10_books;
 
 CREATE TABLE books (
@@ -8,19 +8,22 @@ CREATE TABLE books (
     year_published YEAR,
     genre VARCHAR(100),
     publisher VARCHAR(255),
+    copies_sold BIGINT,
     ratings DECIMAL(3, 2) CHECK (ratings BETWEEN 0.00 AND 5.00)
 );
 
-INSERT INTO books (title, author, year_published, genre, publisher, ratings)
+INSERT INTO books (title, author, year_published, genre, publisher, copies_sold, ratings)
 VALUES
-('A Tale of Two Cities', 'Charles Dickens', 1859, 'Fiction', 'Penguin Books', 3.87),
-('The Lord of the Rings', 'J.R.R. Tolkien', 1954, 'Fantasy', 'Houghton Mifflin Harcourt', 4.53),
-('The Little Prince', 'Antoine de Saint-Exupéry', 1943, 'Fiction', 'Harcourt, Inc', 4.33),
-('The Hobbit', 'J.R.R. Tolkien', 1937, 'Fantasy', 'HarperCollins Childrens Books', 4.29),
-('Dream of the Red Chamber', 'Cao Xueqin', 1761, 'Fiction', 'Anchor', 4.18),
-('And Then There Were None', 'Agatha Christie', 1939, 'Mystery', 'St.Martins Griffin', 4.28),
-('The Lion, the Witch, and the Wardrobe', 'C.S. Lewis', 1950, 'Fantasy', 'HarperCollins Publishers', 4.24),
-('She: A History of Adventure', 'H. Rider Haffard', 1887, 'Fantasy', 'Oxford University Press', 3.57),
-('The Da Vinci Code', 'Dan Brown', 2003, 'Fiction', 'Anchor', 3.92),
-('Think and Grow Rich', 'Napolean Hill', 1937, 'Self Help', 'TarcherPerigee', 4.18);
-
+('A Tale of Two Cities', 'Charles Dickens', 1859, 'Fiction', 'Penguin Books', 201000000, 3.87),
+('The Little Prince', 'Antoine de Saint-Exupéry', 1943, 'Fiction', 'Harcourt, Inc', 200000000, 4.33),
+('The Alchemist', 'Paulo Coelho', 1988, 'Fantasy', 'HarperCollins', 150000000, 3.91),
+('Harry Potter and the Philosopher''s Stone', 'J.K. Rowling', 1997, 'Fantasy', 'Pottermore Publishing', 120000000, 4.47),
+('The Hobbit', 'J.R.R. Tolkien', 1937, 'Fantasy', 'HarperCollins Childrens Books', 100000000, 4.29),
+('Dream of the Red Chamber', 'Cao Xueqin', 1761, 'Fiction', 'Anchor', 100000000, 4.18),
+('And Then There Were None', 'Agatha Christie', 1939, 'Mystery', 'St. Martins Griffin', 100000000, 4.28),
+('The Hobbit', 'J.R.R. Tolkien', 1937, 'Fantasy', 'Houghton Mifflin', 100000000, 4.29),
+('Alice''s Adventures in Wonderland', 'Lewis Carroll', 1865, 'Fantasy', 'Penguin Group', 100000000, 4.06),
+('The Lion, the Witch, and the Wardrobe', 'C.S. Lewis', 1950, 'Fantasy', 'HarperCollins Publishers', 85000000, 4.24),
+('She: A History of Adventure', 'H. Rider Haggard', 1887, 'Fantasy', 'Oxford University Press', 83000000, 3.57),
+('The Da Vinci Code', 'Dan Brown', 2003, 'Fiction', 'Anchor', 80000000, 3.92),
+('Harry Potter and the Chamber of Secrets', 'J.K. Rowling', 1998, 'Fantasy', 'Pottermore Publishing', 77000000, 4.40);

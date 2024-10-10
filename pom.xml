@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -11,13 +12,16 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.example</groupId>
-    <artifactId>myproject</artifactId>
+    <groupId>com.example</groupId> <!-- You can adjust this if needed -->
+    <artifactId>WishListManager</artifactId> <!-- Kept the artifact ID from your local setup -->
     <version>1.0-SNAPSHOT</version>
 
     <!-- Declaring the Java version -->
     <properties>
         <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source> <!-- Kept from local version -->
+        <maven.compiler.target>17</maven.compiler.target> <!-- Kept from local version -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- Kept from local version -->
     </properties>
 
     <!-- Declaring dependencies for the project -->
@@ -28,11 +32,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-
+        <!-- Spring Boot Starter Actuator for monitoring -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+
         <!-- Spring Boot Starter Data JPA for database interaction -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -46,15 +51,21 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- MySQL Driver -->
+        <!-- MySQL Driver for connecting to MySQL database -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>8.0.33</version>
             <scope>runtime</scope>
         </dependency>
-    </dependencies>
 
+        <!-- Additional dependency from local version -->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.7</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -63,7 +74,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>book.ratings.project.BookRatingApplication</mainClass>
+                    <mainClass>book.ratings.project.BookRatingApplication</mainClass> <!-- Adjust the main class -->
                 </configuration>
             </plugin>
         </plugins>
