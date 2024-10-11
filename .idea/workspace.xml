@@ -5,7 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1adad0e-b27d-4615-99a7-7bcb93cae98f" name="Changes" comment="WishListManager">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/books/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/books/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookDatabase.mysql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/books/BookDatabase.mysql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/books/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/books/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wishlist/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wishlist/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WishList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wishlist/WishList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WishListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wishlist/WishListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WishListRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WishListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wishlist/WishListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/ratings/project/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/ratings/project/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/ratings/project/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/ratings/project/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/ratings/project/service/RatingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/ratings/project/service/RatingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WishList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WishListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WishListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wishlist/WishListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WishListService.java" beforeDir="false" />
+    </list>
+    <list id="c959a0d6-915d-4627-bc4b-889469846297" name="Changes by Media" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/books/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/books/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wishlist/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/ratings/project/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/ratings/project/repository/BookRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +51,35 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/wishlist/User.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="2" changelist="f1adad0e-b27d-4615-99a7-7bcb93cae98f" />
+        <range start1="2" end1="6" start2="4" end2="8" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/books/Book.java">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+        <range start1="2" end1="7" start2="2" end2="7" changelist="f1adad0e-b27d-4615-99a7-7bcb93cae98f" />
+        <range start1="62" end1="62" start2="62" end2="71" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/books/BookController.java">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+        <range start1="2" end1="4" start2="2" end2="4" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+        <range start1="6" end1="6" start2="6" end2="8" changelist="f1adad0e-b27d-4615-99a7-7bcb93cae98f" />
+        <range start1="21" end1="23" start2="23" end2="25" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -33,22 +92,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;WishListManager&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ricar/OneDrive/Documents/CEN4010_Fall_2024/WishListManager/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "WishListManager",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ricar/OneDrive/Documents/CEN4010_Fall_2024/NarnesAndBobles",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/ricar/OneDrive/Documents/CEN4010_Fall_2024/WishListManager/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ricar\OneDrive\Documents\CEN4010_Fall_2024\WishListManager\src\main\java\books" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="wishlist" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,6 +144,11 @@
       <updated>1727024445643</updated>
       <workItem from="1727024446672" duration="3522000" />
       <workItem from="1727028285642" duration="202000" />
+      <workItem from="1728160588588" duration="1962000" />
+      <workItem from="1728165952931" duration="16000" />
+      <workItem from="1728175851971" duration="2028000" />
+      <workItem from="1728225461555" duration="57000" />
+      <workItem from="1728602423189" duration="5454000" />
     </task>
     <servers />
   </component>
