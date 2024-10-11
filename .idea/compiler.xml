@@ -2,16 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="WishListManager" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="myproject" target="17" />
       <module name="NarnesAndBobles" target="1.5" />
+      <module name="WishListManager" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

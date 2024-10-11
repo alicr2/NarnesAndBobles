@@ -1,3 +1,10 @@
+package wishlist;
+
+import books.BookRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.awt.print.Book;
 import java.util.List;
 
 @Service
@@ -13,16 +20,16 @@ public class WishListService {
     public WishList createWishList(Long userId, String wishListName) {
         WishList wishList = new WishList();
         wishList.setName(wishListName);
-        wishList.setUser(new User(userId));  // Assuming user exists in the DB
+//        wishList.setUser(new wishlist.User(userId));  // Assuming user exists in the DB
         return wishListRepository.save(wishList);
     }
 
     // Add a book to a wishlist
     public void addBookToWishList(Long wishListId, Long bookId) {
-        WishList wishList = wishListRepository.findById(wishListId).orElseThrow();
-        Book book = bookRepository.findById(bookId).orElseThrow();
-        wishList.getBooks().add(book);
-        wishListRepository.save(wishList);
+//        WishList wishList = wishListRepository.findByUserId(wishListId).orElseThrow();
+//        books.Book book = bookRepository.findBooksByGenre(bookId).orElseThrow();
+//        wishList.getBooks().add(book);
+//        wishListRepository.save(wishList);
     }
 
     // Remove a book from a wishlist and move it to a shopping cart
