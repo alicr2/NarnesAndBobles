@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1adad0e-b27d-4615-99a7-7bcb93cae98f" name="Changes" comment="WishListManager">
-      <change afterPath="$PROJECT_DIR$/src/main/BookDiscount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WishListManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WishListManager.iml" afterDir="false" />
-    </list>
+    <list default="true" id="f1adad0e-b27d-4615-99a7-7bcb93cae98f" name="Changes" comment="WishListManager" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +73,7 @@
       <workItem from="1728491019463" duration="3327000" />
       <workItem from="1728528901422" duration="589000" />
       <workItem from="1728573699421" duration="1389000" />
+      <workItem from="1728602668249" duration="13000" />
     </task>
     <servers />
   </component>
