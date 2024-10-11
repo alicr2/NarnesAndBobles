@@ -36,7 +36,7 @@ public class BookService {
 
     public Book getBookById(Long bookId) {
         return bookRepository.findById(bookId)
-                .orElseThrow(() -> new RuntimeException("Book not found"));
+                .orElseThrow(() -> new RuntimeException("books.Book not found"));
     }
 
 
@@ -48,7 +48,7 @@ public class BookService {
 
 
         Book book = bookRepository.findById(bookId)
-                .orElseThrow(() -> new RuntimeException("Book not found"));
+                .orElseThrow(() -> new RuntimeException("books.Book not found"));
         rating.setBook(book);
 
         ratingRepository.save(rating);
@@ -57,7 +57,7 @@ public class BookService {
 
     public void addComment(Long bookId, CommentDto commentDto) {
         Book book = bookRepository.findById(bookId)
-                .orElseThrow(() -> new RuntimeException("Book not found"));
+                .orElseThrow(() -> new RuntimeException("books.Book not found"));
         Comment comment = new Comment(commentDto.getComment(), commentDto.getUserId(), commentDto.getDate(), book);
         commentRepository.save(comment);
     }
