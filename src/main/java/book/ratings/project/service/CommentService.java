@@ -24,7 +24,7 @@ public class CommentService {
 
     public void addComment(Long bookId, CommentDto commentDto) {
         Book book = bookRepository.findById(bookId)
-                .orElseThrow(() -> new RuntimeException("Book not found"));
+                .orElseThrow(() -> new RuntimeException("books.Book not found"));
 
         Comment comment = convertToEntity(commentDto, book);
         commentRepository.save(comment);

@@ -1,9 +1,12 @@
-package geekText;
+package books;
 
-import geekText.Book;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+//import book.ratings.project.model.Book;
+import books.Book;
+
 
 import java.util.List;
 

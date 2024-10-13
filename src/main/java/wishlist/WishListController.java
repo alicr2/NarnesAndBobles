@@ -1,13 +1,15 @@
-package geekText;
+package wishlist;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.awt.print.Book;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/wishlist")
+@RequestMapping("/wishlist")
 public class WishListController {
 
     @Autowired
@@ -17,27 +19,27 @@ public class WishListController {
     @PostMapping("/create")
     public ResponseEntity<Void> createWishList(@RequestParam Long userId, @RequestParam String wishListName) {
         wishListService.createWishList(userId, wishListName);
-        return ResponseEntity.status(201).build();
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     // Add a book to a wishlist
     @PostMapping("/addBook")
     public ResponseEntity<Void> addBookToWishList(@RequestParam Long wishListId, @RequestParam Long bookId) {
         wishListService.addBookToWishList(wishListId, bookId);
-        return ResponseEntity.ok().build();
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    // Remove a book from wishlist and move it to the shopping cart
+    // Remove a book from wishlist
     @DeleteMapping("/removeBook")
     public ResponseEntity<Void> removeBookFromWishList(@RequestParam Long wishListId, @RequestParam Long bookId) {
         wishListService.removeBookFromWishList(wishListId, bookId);
-        return ResponseEntity.noContent().build();
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     // List all books in a wishlist
     @GetMapping("/books")
     public ResponseEntity<List<Book>> listBooksInWishList(@RequestParam Long wishListId) {
         List<Book> books = wishListService.listBooksInWishList(wishListId);
-        return ResponseEntity.ok(books);
+        return new ResponseEntity<>(books, HttpStatus.OK);
     }
 }

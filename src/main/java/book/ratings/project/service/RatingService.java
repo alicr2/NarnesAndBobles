@@ -34,7 +34,7 @@ public class RatingService {
         rating.setUserId(ratingDto.getUserId());
         rating.setDate(ratingDto.getDate());
         Book book = bookRepository.findById(bookId)
-                .orElseThrow(() -> new RuntimeException("Book not found"));
+                .orElseThrow(() -> new RuntimeException("books.Book not found"));
         rating.setBook(book);
 
         ratingRepository.save(rating);

@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1adad0e-b27d-4615-99a7-7bcb93cae98f" name="Changes" comment="WishListManager">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+>>>>>>> 485822d1c337466d9ffa8f943f8239aa7b69ec7a
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +23,35 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/wishlist/User.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="2" changelist="f1adad0e-b27d-4615-99a7-7bcb93cae98f" />
+        <range start1="2" end1="6" start2="4" end2="8" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/books/Book.java">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+        <range start1="2" end1="7" start2="2" end2="7" changelist="f1adad0e-b27d-4615-99a7-7bcb93cae98f" />
+        <range start1="62" end1="62" start2="62" end2="71" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/books/BookController.java">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+        <range start1="2" end1="4" start2="2" end2="4" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+        <range start1="6" end1="6" start2="6" end2="8" changelist="f1adad0e-b27d-4615-99a7-7bcb93cae98f" />
+        <range start1="21" end1="23" start2="23" end2="25" changelist="c959a0d6-915d-4627-bc4b-889469846297" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -33,6 +64,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -49,11 +81,22 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+=======
+</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ricar\OneDrive\Documents\CEN4010_Fall_2024\WishListManager\src\main\java\books" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="wishlist" />
+    </key>
+  </component>
+>>>>>>> 485822d1c337466d9ffa8f943f8239aa7b69ec7a
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>

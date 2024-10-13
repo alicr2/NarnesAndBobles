@@ -1,6 +1,9 @@
-import geekText.Book;
+package wishlist;
+import book.ratings.project.model.Book;
+import jakarta.persistence.*;
 import lombok.Data;
-import javax.persistence.*;
+import org.springframework.data.annotation.Id;
+
 import java.util.ArrayList;
 import java.util.List;
 
