@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myproject" />
+        <module name="WishListManager" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="NarnesAndBobles" target="1.5" />
-      <module name="WishListManager" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
