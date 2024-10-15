@@ -1,5 +1,3 @@
-package geekText;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "books") // Annotation from the master branch
+@Table(name = "books")
 public class Book {
 
     @Id
@@ -16,10 +14,9 @@ public class Book {
 
     private String title;
     private String author;
-    private String genre; // Field from master branch
-    private double rating; // Field from master branch
+    private String genre;
+    private double rating;
 
-    // Getters and Setters manually written (from master)
 
     public Long getId() {
         return id;
