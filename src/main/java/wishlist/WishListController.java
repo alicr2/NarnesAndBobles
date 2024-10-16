@@ -15,31 +15,33 @@ public class WishListController {
     @Autowired
     private WishListService wishListService;
 
-    // Create a new wishlist
+    // Get all wishlists for a specific user
+    @GetMapping("/user/{userId}")
+    public List<WishList> getWishListsByUser(@PathVariable Long userId) {
+        return wishListService.getWishListsByUser(userId);
+    }
+
+    // Create a new wishlist for a user with a given name
     @PostMapping("/create")
-    public ResponseEntity<Void> createWishList(@RequestParam Long userId, @RequestParam String wishListName) {
-        wishListService.createWishList(userId, wishListName);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+    public WishList createWishList(@RequestParam Long userId, @RequestParam String name) {
+        return wishListService.createWishList(userId, name);
     }
 
-    // Add a book to a wishlist
-    @PostMapping("/addBook")
-    public ResponseEntity<Void> addBookToWishList(@RequestParam Long wishListId, @RequestParam Long bookId) {
-        wishListService.addBookToWishList(wishListId, bookId);
-        return new ResponseEntity<>(HttpStatus.OK);
+    // Add books to an existing wishlist
+    @PostMapping("/{wishListId}/add-books")
+    public void addBooksToWishList(@PathVariable Long wishListId, @RequestParam List<Long> bookIds) {
+        wishListService.addBooksToWishList(wishListId, bookIds);
     }
 
-    // Remove a book from wishlist
-    @DeleteMapping("/removeBook")
-    public ResponseEntity<Void> removeBookFromWishList(@RequestParam Long wishListId, @RequestParam Long bookId) {
+    // Remove a book from a wishlist
+    @DeleteMapping("/{wishListId}/remove-book")
+    public void removeBookFromWishList(@PathVariable Long wishListId, @RequestParam Long bookId) {
         wishListService.removeBookFromWishList(wishListId, bookId);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    // List all books in a wishlist
-    @GetMapping("/books")
-    public ResponseEntity<List<Book>> listBooksInWishList(@RequestParam Long wishListId) {
-        List<Book> books = wishListService.listBooksInWishList(wishListId);
-        return new ResponseEntity<>(books, HttpStatus.OK);
+    // Get a specific wishlist by ID
+    @GetMapping("/{wishListId}")
+    public WishList getWishListById(@PathVariable Long wishListId) {
+        return wishListService.getWishListById(wishListId);
     }
 }
