@@ -70,6 +70,16 @@ public class BookService {
                 .collect(Collectors.toList());
     }
 
+    public List<Book> getTop10BooksByCopiesSold() {
+        return bookRepository.findTop10ByOrderByCopiesSoldDesc();
+    }
+
+    // Method to retrieve books by minimum number of copies sold
+    public List<Book> getBooksByCopiesSold(int copiesSold) {
+        return bookRepository.findByCopiesSoldGreaterThanEqual(copiesSold);
+    }
+
+
 
     public double calculateAverageRating(Long bookId) {
         List<Rating> ratings = ratingRepository.findByBookId(bookId);

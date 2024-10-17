@@ -18,6 +18,12 @@ public class Book {
     private String title;
     private String author;
 
+    private String genre;
+    private double rating;
+
+    @Column(name = "copies_sold")
+    private int copiesSold;
+
     @OneToMany(mappedBy = "book", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Comment> comments;
 
@@ -39,6 +45,15 @@ public class Book {
     }
 
 
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+
     public String getTitle() {
         return title;
     }
@@ -53,6 +68,22 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+
+    public int getCopiesSold() {
+        return copiesSold;
+    }
+
+    public void setCopiesSold(int copiesSold) {
+        this.copiesSold = copiesSold;
+    }
+    public void setRating(double rating) {
+        this.rating = rating;
     }
 
     public List<Comment> getComments() {

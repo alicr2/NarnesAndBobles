@@ -67,5 +67,18 @@ public class BookRatingController {
         return ResponseEntity.ok(averageRating);
     }
 
+    @GetMapping("/top-sellers")
+    public ResponseEntity<List<Book>> getTop10BooksByCopiesSold() {
+        List<Book> topSellers = bookService.getTop10BooksByCopiesSold();
+        return ResponseEntity.ok(topSellers);
+    }
+
+    // Endpoint to get books by a minimum number of copies sold
+    @GetMapping("/copies-sold/{minCopies}")
+    public ResponseEntity<List<Book>> getBooksByCopiesSold(@PathVariable int minCopies) {
+        List<Book> books = bookService.getBooksByCopiesSold(minCopies);
+        return ResponseEntity.ok(books);
+    }
+
 
 }
