@@ -1,6 +1,0 @@
-{
-  "timestamp": "2024-10-19T15:33:29.113+00:00",
-  "status": 500,
-  "error": "Internal Server Error",
-  "path": "/api/books"
-}
