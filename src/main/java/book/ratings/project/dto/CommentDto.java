@@ -1,7 +1,10 @@
 package book.ratings.project.dto;
 import book.ratings.project.model.Book;
+import book.ratings.project.model.Book;
 
 import java.time.LocalDateTime;
+
+
 
 
 public class CommentDto {
@@ -9,6 +12,7 @@ public class CommentDto {
     private Long userId;
     private Long bookId;
     private LocalDateTime date;
+
 
     public CommentDto(){
 
@@ -57,7 +61,5 @@ public class CommentDto {
 
     }
 
-    public void setbookId(Long bookId) {
-        this.bookId= bookId;
-    }
+
 }

@@ -1,4 +1,5 @@
 package book.ratings.project.model;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -22,7 +23,8 @@ public class Book {
     private double rating;
 
     @Column(name = "copies_sold")
-    private int copiesSold;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Integer copiesSold;
 
     @OneToMany(mappedBy = "book", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Comment> comments;
@@ -31,8 +33,7 @@ public class Book {
     private List<Rating> ratings;
 
 
-    public Book() {
-    }
+
 
 
 
@@ -76,10 +77,10 @@ public class Book {
 
 
     public int getCopiesSold() {
-        return copiesSold;
+        return copiesSold == null ? 0 : copiesSold;
     }
 
-    public void setCopiesSold(int copiesSold) {
+    public void setCopiesSold(Integer copiesSold) {
         this.copiesSold = copiesSold;
     }
     public void setRating(double rating) {
@@ -92,6 +93,17 @@ public class Book {
 
     public void setComments(List<Comment> comments) {
         this.comments = comments;
+    }
+
+
+    public void addComment(Comment comment) {
+        this.comments.add(comment);
+        comment.setBook(this);
+    }
+
+    public void addRating(Rating rating) {
+        this.ratings.add(rating);
+        rating.setBook(this);
     }
 
 }

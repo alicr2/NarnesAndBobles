@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fdd7a272-8158-4660-9a3f-f05c4bec5faa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarnesAndBobles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NarnesAndBobles.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/ratings/project/controller/BookRatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/ratings/project/controller/BookRatingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/ratings/project/dto/CommentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/ratings/project/dto/CommentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/ratings/project/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/ratings/project/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/ratings/project/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/ratings/project/model/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/ratings/project/model/Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/ratings/project/model/Rating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/controller/BookRatingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/controller/BookRatingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/controller/LinkGeneratorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/controller/LinkGeneratorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/dto/CommentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/dto/CommentDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/model/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/model/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/model/Rating.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/model/Rating.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/service/RatingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/service/RatingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTTP Private Environment File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2naO4A2IvD0fpmCHr8uv0zverxP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Changes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="BookRatingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="NarnesAndBobles" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="book.ratings.project.BookRatingApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="book.ratings.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="NarnesAndBobles" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="book.ratings.project.MyApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="book.ratings.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BookRatingApplication" />
+        <item itemvalue="HTTP Request.All in generated-requests" />
+        <item itemvalue="Spring Boot.MyApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fdd7a272-8158-4660-9a3f-f05c4bec5faa" name="Changes" comment="" />
+      <created>1729207532909</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729207532909</updated>
+      <workItem from="1729207547579" duration="19775000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -10,6 +10,7 @@ book\ratings\project\service\RatingService.class
 book\ratings\project\controller\BookRatingController.class
 book\ratings\project\repository\BookRepository.class
 book\ratings\project\service\CommentService.class
+book\ratings\project\dto\BookDto.class
 book\ratings\project\repository\CommentRepository.class
 wishlist\model\WishList.class
 book\ratings\project\model\Rating.class
