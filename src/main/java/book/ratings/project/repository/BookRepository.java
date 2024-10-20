@@ -19,4 +19,6 @@ public interface BookRepository  extends JpaRepository<Book,Long> {
     List<Book> findByRatingGreaterThanEqual(double rating);
 
     List<Book> findTop10ByOrderByCopiesSoldDesc();
+
+    List<Book> findByCopiesSoldGreaterThanEqual(int copiesSold);
 }

@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/books")
@@ -24,6 +25,8 @@ public class BookRatingController {
 
     @Autowired
     private CommentService commentService;
+
+
 
     // Rate a book
     @PostMapping("/{bookId}/rate")
@@ -65,6 +68,19 @@ public class BookRatingController {
     public ResponseEntity<Double> getAverageRating(@PathVariable Long bookId) {
         double averageRating = ratingService.calculateAverageRating(bookId);
         return ResponseEntity.ok(averageRating);
+    }
+
+    @GetMapping("/top-sellers")
+    public ResponseEntity<List<Book>> getTop10BooksByCopiesSold() {
+        List<Book> topSellers = bookService.getTop10BooksByCopiesSold();
+        return ResponseEntity.ok(topSellers);
+    }
+
+    // Endpoint to get books by a minimum number of copies sold
+    @GetMapping("/copies-sold/{minCopies}")
+    public ResponseEntity<List<Book>> getBooksByCopiesSold(@PathVariable int minCopies) {
+        List<Book> books = bookService.getBooksByCopiesSold(minCopies);
+        return ResponseEntity.ok(books);
     }
 
 

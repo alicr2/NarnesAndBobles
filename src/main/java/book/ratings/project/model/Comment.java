@@ -1,4 +1,5 @@
 package book.ratings.project.model;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -18,6 +19,7 @@ public class Comment {
 
     @ManyToOne
     @JoinColumn(name = "book_id", nullable= false)
+    @JsonIgnore
     private Book book;
 
 

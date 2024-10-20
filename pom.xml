@@ -8,50 +8,43 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.0</version> <!-- Adjust the version based on the Spring Boot version you want -->
+        <version>3.1.0</version> <!-- Adjust based on Spring Boot version -->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.example</groupId> <!-- You can adjust this if needed -->
-    <artifactId>WishListManager</artifactId> <!-- Kept the artifact ID from your local setup -->
+    <groupId>com.example</groupId> <!-- Adjust based on your package name -->
+    <artifactId>NarnesAndBobles</artifactId> <!-- Project name -->
     <version>1.0-SNAPSHOT</version>
 
-    <!-- Declaring the Java version -->
+    <!-- Java version declaration -->
     <properties>
         <java.version>17</java.version>
-        <maven.compiler.source>17</maven.compiler.source> <!-- Kept from local version -->
-        <maven.compiler.target>17</maven.compiler.target> <!-- Kept from local version -->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- Kept from local version -->
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!-- Declaring dependencies for the project -->
+    <!-- Dependencies -->
     <dependencies>
-        <!-- Spring Boot Starter Web for building REST APIs -->
+        <!-- Spring Boot Starter for building REST APIs -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Spring Boot Starter Actuator for monitoring -->
+        <!-- Spring Boot Starter Actuator for monitoring and managing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-        <!-- Spring Boot Starter Data JPA for database interaction -->
+        <!-- Spring Boot Data JPA for interacting with the database -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- H2 Database for testing (in-memory database) -->
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-
-        <!-- MySQL Driver for connecting to MySQL database -->
+        <!-- MySQL Driver for connecting to MySQL -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
@@ -59,29 +52,22 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Additional dependency from local version -->
-        <dependency>
-            <groupId>org.apache.velocity</groupId>
-            <artifactId>velocity</artifactId>
-            <version>1.7</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-commons</artifactId>
-            <version>3.1.0</version>
-        </dependency>
+        <!-- Jakarta Persistence API for ORM -->
         <dependency>
             <groupId>jakarta.persistence</groupId>
             <artifactId>jakarta.persistence-api</artifactId>
             <version>3.1.0</version>
         </dependency>
+
+        <!-- Spring Data Commons for repository support -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons</artifactId>
+            <version>3.1.0</version>
+        </dependency>
     </dependencies>
 
+    <!-- Build configuration -->
     <build>
         <plugins>
             <plugin>
@@ -89,7 +75,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>book.ratings.project.BookRatingApplication</mainClass> <!-- Adjust the main class -->
+                    <mainClass>book.ratings.project.BookRatingApplication</mainClass> <!-- Your main application class -->
                 </configuration>
             </plugin>
         </plugins>
