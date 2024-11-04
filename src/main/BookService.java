@@ -28,7 +28,7 @@ public class BookService {
         for (Book book : books) {
             double newPrice = book.getPrice() * (1 - discountPercent / 100);
             book.setPrice(newPrice);
-            bookRepository.save(book); // Save updated book price
+            bookRepository.save(book);
         }
     }
 }
