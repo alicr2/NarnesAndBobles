@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1adad0e-b27d-4615-99a7-7bcb93cae98f" name="Changes" comment="WishListManager">
-      <change beforePath="$PROJECT_DIR$/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BookService.java" afterDir="false" />
-    </list>
+    <list default="true" id="f1adad0e-b27d-4615-99a7-7bcb93cae98f" name="Changes" comment="WishListManager" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +78,7 @@
       <workItem from="1729010817467" duration="2104000" />
       <workItem from="1729129616436" duration="1015000" />
       <workItem from="1730729339062" duration="395000" />
+      <workItem from="1730729805505" duration="9000" />
     </task>
     <servers />
   </component>
