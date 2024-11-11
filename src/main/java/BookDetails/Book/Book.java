@@ -7,16 +7,6 @@ import jakarta.persistence.*;
 public class Book {
 
 @Id
-//    @SequenceGenerator(
-//            name = "book_sequence",
-//            sequenceName = "book_sequence",
-//            allocationSize = 1
-//    )
-//    @GeneratedValue(
-//            strategy = GenerationType.SEQUENCE,
-//            generator = "book_sequence"
-//    )
-
     private String ISBN;
     private String bookName;
     private String bookDescription;
@@ -29,19 +19,6 @@ public class Book {
     @ManyToOne
     @JoinColumn(name = "author_id")
     private Author author;
-
-//    public Book() {
-//        ISBN = " ";
-//        bookName = " ";
-//        bookDescription = " ";
-//        price = 0.00;
-//        author = ;
-//        genre = " ";
-//        publisher = " ";
-//        yearPublished = 0;
-//        copiesSold = 0;
-//    }
-
 
     public Book() {
     }

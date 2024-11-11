@@ -5,7 +5,6 @@ import java.util.List;
 @Entity
 public class Author {
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String firstName;
     private String lastName;
@@ -23,9 +22,6 @@ public class Author {
         this.publisher = publisher;
     }
 
-//    @OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
-//    private List<Book> books;
-
     @Override
     public String toString() {
         return "Author{" +
@@ -36,10 +32,6 @@ public class Author {
                 ", publisher='" + publisher + '\'' +
                 '}';
     }
-
-//    public List<Book> getBooks() {
-//        return books;
-//    }
 
     public Long getId() {
         return id;
@@ -81,7 +73,4 @@ public class Author {
         this.publisher = publisher;
     }
 
-//    public void setBooks(List<Book> books) {
-//        this.books = books;
-//    }
 }
