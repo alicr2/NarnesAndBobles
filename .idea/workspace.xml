@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5c58e7a-8f7b-452b-a1c5-b1c9614c1a96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProfileManager/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProfileManager/DatabaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProfileManager/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProfileManager/ProfileManagerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProfileManager/Application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProfileManager/CreditCardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProfileManager/CreditCardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProfileManager/UserControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProfileManager/UserControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProfileManager/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProfileManager/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProfileManager/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProfileManager/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProfileManager/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wishlist/WishListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wishlist/WishListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wishlist/WishListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wishlist/WishListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/controller/BookRatingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/controller/BookRatingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/dto/RatingDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/dto/RatingDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/repository/BookRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/service/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/service/CommentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/book/ratings/project/service/RatingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/book/ratings/project/service/RatingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myproject-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myproject-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-    </list>
+    <list default="true" id="f5c58e7a-8f7b-452b-a1c5-b1c9614c1a96" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
