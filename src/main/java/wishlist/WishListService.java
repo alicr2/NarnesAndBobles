@@ -4,7 +4,8 @@ import books.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.awt.print.Book;
+import book.ratings.project.model.Book;
+
 import java.util.List;
 
 @Service

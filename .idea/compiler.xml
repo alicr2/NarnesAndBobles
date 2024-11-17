@@ -11,7 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CENGROUP1" target="17" />
       <module name="NarnesAndBobles" target="1.5" />
+      <module name="ProfileManager" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ProfileManager?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: SM305duh!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+  tomcat:
+    basedir: temp
+    uri-encoding: UTF-8
+
+logging:
+  level:
+    root: INFO
+    # This sets the default logging level
+
+
