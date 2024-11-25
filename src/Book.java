@@ -20,8 +20,10 @@ public class Book {
     private double rating;
     private int copiesSold;
 
+    // No-argument constructor for JPA
     public Book() {}
 
+    // Full-argument constructor for convenience
     public Book(Long id, String title, String author, String genre, String publisher, double price, double rating, int copiesSold) {
         this.id = id;
         this.title = title;
@@ -32,7 +34,8 @@ public class Book {
         this.rating = rating;
         this.copiesSold = copiesSold;
     }
-ma
+
+    // Getters
     public Long getId() {
         return id;
     }

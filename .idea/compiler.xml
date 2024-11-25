@@ -7,15 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myproject" />
-        <module name="WishListManager" />
+        <module name="NarnesAndBobles" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="NarnesAndBobles" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="NarnesAndBobles" options="-parameters" />
       <module name="WishListManager" options="-parameters" />
       <module name="myproject" options="-parameters" />
     </option>
