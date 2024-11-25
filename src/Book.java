@@ -32,7 +32,7 @@ public class Book {
         this.rating = rating;
         this.copiesSold = copiesSold;
     }
-
+ma
     public Long getId() {
         return id;
     }
