@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 public class Book {
 
 @Id
+
     private String ISBN;
     private String bookName;
     private String bookDescription;
@@ -19,6 +20,7 @@ public class Book {
     @ManyToOne
     @JoinColumn(name = "author_id")
     private Author author;
+
 
     public Book() {
     }
