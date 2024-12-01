@@ -1,20 +1,32 @@
 import org.example.model.Book;
+
+import org.example.repository.BookRepository;
 import org.example.service.BookService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 
 @CrossOrigin(origins = "*") // Allow all origins during testing
 @RestController
+@RequestMapping("/api/books")
 public class BookController {
 
-    @Autowired
-    private BookService bookService;
+    private final BookService bookService;
 
-    @GetMapping("/api/booksgenre/{genre}")
+    @Autowired
+    private BookRepository bookRepository;
+
+    public BookController(BookService bookService, BookRepository bookRepository) {
+        this.bookService = bookService;
+        this.bookRepository = bookRepository;
+    }
+
+    // Get books by genre
+    @GetMapping("/booksgenre/{genre}")
     public ResponseEntity<List<Book>> getBooksByGenre(@PathVariable String genre) {
         List<Book> books = bookService.getBooksByGenre(genre);
         if (books == null || books.isEmpty()) {
@@ -23,7 +35,8 @@ public class BookController {
         return new ResponseEntity<>(books, HttpStatus.OK);
     }
 
-    @GetMapping("/api/books/top-sellers")
+    // Get top 10 best-sellers
+    @GetMapping("/top-sellers")
     public ResponseEntity<List<Book>> getTopSellers() {
         List<Book> books = bookService.getTopSellers();
         if (books == null || books.isEmpty()) {
@@ -32,7 +45,8 @@ public class BookController {
         return new ResponseEntity<>(books, HttpStatus.OK);
     }
 
-    @GetMapping("/api/books/rating/{rating}")
+    // Get books by rating
+    @GetMapping("/rating/{rating}")
     public ResponseEntity<List<Book>> getBooksByRating(@PathVariable double rating) {
         if (rating < 0 || rating > 5) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -44,16 +58,21 @@ public class BookController {
         return new ResponseEntity<>(books, HttpStatus.OK);
     }
 
-    @PutMapping ("/api/books/publisher/discount/{publisher}/{discountPercent}")
-    public ResponseEntity<Void> applyDiscount(
-            @PathVariable String publisher,
-            @PathVariable double discountPercent) {
-        System.out.println("Method: PATCH, Publisher: " + publisher + ", Discount: " + discountPercent);
 
-        if (discountPercent <= 0 || discountPercent > 100) {
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+    @RequestMapping(value = "/publisher/{publisher}/discountPercentage/{discountPercentage}", method = {RequestMethod.PUT})
+    public ResponseEntity<Void> applyDiscountToPublisherBooks(
+            @PathVariable String publisher,
+            @PathVariable double discountPercentage) {
+        if (discountPercentage <= 0 || discountPercentage > 100) {
+            throw new IllegalArgumentException("Discount percentage must be between 0 and 100");
         }
-        bookService.applyDiscount(publisher, discountPercent);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+
+        bookRepository.findByPublisher(publisher).forEach(book -> {
+            double discountedPrice = book.getPrice() * (1 - discountPercentage / 100);
+            book.setPrice(discountedPrice);
+            bookRepository.save(book);
+        });
+
+        return ResponseEntity.noContent().build(); // Return HTTP 204 No Content
     }
 }

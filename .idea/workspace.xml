@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1adad0e-b27d-4615-99a7-7bcb93cae98f" name="Changes" comment="WishListManager">
+      <change afterPath="$PROJECT_DIR$/src/DiscountRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BookService.java" afterDir="false" />
@@ -87,6 +88,7 @@
       <workItem from="1730729945209" duration="424000" />
       <workItem from="1731862552542" duration="6000" />
       <workItem from="1731865218093" duration="24000" />
+      <workItem from="1733014715612" duration="134000" />
     </task>
     <servers />
   </component>

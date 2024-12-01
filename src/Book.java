@@ -16,6 +16,7 @@ public class Book {
     private String author;
     private String genre;
     private String publisher;
+    private double discountPercentage;
     private double price;
     private double rating;
     private int copiesSold;
@@ -24,13 +25,14 @@ public class Book {
     public Book() {}
 
     // Full-argument constructor for convenience
-    public Book(Long id, String title, String author, String genre, String publisher, double price, double rating, int copiesSold) {
+    public Book(Long id, String title, String author, String genre, String publisher, double price, double rating, double discountPercentage, int copiesSold) {
         this.id = id;
         this.title = title;
         this.author = author;
         this.genre = genre;
         this.publisher = publisher;
         this.price = price;
+        this.discountPercentage = discountPercentage;
         this.rating = rating;
         this.copiesSold = copiesSold;
     }
@@ -46,6 +48,10 @@ public class Book {
 
     public String getAuthor() {
         return author;
+    }
+
+    public double getDiscountPercentage() {
+        return discountPercentage;
     }
 
     public String getGenre() {
@@ -79,6 +85,10 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public void setDiscountPercentage(double discountPercentage) {
+        this.discountPercentage = discountPercentage;
     }
 
     public void setGenre(String genre) {
