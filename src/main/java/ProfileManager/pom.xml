@@ -18,9 +18,9 @@
     <dependencies>
         <!-- Spring Boot Starter Web -->
         <dependency>
-            <groupId>ORG.springframework.boot</groupId>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring-boot.version}</version>
+            <version>3.1.0</version>
         </dependency>
 
         <!-- Spring Boot Starter Data JPA -->

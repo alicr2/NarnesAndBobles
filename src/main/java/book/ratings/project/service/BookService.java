@@ -11,7 +11,9 @@ import book.ratings.project.repository.RatingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -43,22 +45,23 @@ public class BookService {
     public void addRating(Long bookId, RatingDto ratingDto) {
         Rating rating = new Rating();
         rating.setRating(ratingDto.getRating());
-        rating.setUserId(ratingDto.getUserId());
-        rating.setDate(ratingDto.getDate());
+        rating.setUserId(rating.getUserId());
+        rating.setDate(LocalDateTime.now());
 
 
         Book book = bookRepository.findById(bookId)
                 .orElseThrow(() -> new RuntimeException("books.Book not found"));
         rating.setBook(book);
-
         ratingRepository.save(rating);
+        book.setRating(calculateAverageRating(bookId));
+        bookRepository.save(book);
     }
 
 
     public void addComment(Long bookId, CommentDto commentDto) {
         Book book = bookRepository.findById(bookId)
                 .orElseThrow(() -> new RuntimeException("books.Book not found"));
-        Comment comment = new Comment(commentDto.getComment(), commentDto.getUserId(), commentDto.getDate(), book);
+        Comment comment = new Comment(commentDto.getComment(), commentDto.getUserId(), LocalDateTime.now(), book);
         commentRepository.save(comment);
     }
 

@@ -1,11 +1,6 @@
 package book.ratings.project.dto;
-import book.ratings.project.model.Book;
-import book.ratings.project.model.Book;
 
 import java.time.LocalDateTime;
-
-
-
 
 public class CommentDto {
     private String comment;
@@ -23,6 +18,12 @@ public class CommentDto {
         this.userId= userId;
         this.bookId = bookId;
         this.date = date;
+    }
+    public CommentDto(String comment,Long userId,Long bookId){
+        this.comment =comment;
+        this.userId= userId;
+        this.bookId = bookId;
+        this.date = LocalDateTime.now();
     }
 
 

@@ -1,3 +1,4 @@
+book\ratings\project\model\User.class
 ProfileManager\UserRepository.class
 wishlist\controller\WishListController.class
 book\ratings\project\repository\RatingRepository.class

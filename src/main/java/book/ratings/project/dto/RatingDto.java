@@ -1,25 +1,27 @@
 package book.ratings.project.dto;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 
 import java.time.LocalDateTime;
 
 public class RatingDto {
 
-    @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private double rating;
     private Long userId;
     private LocalDateTime date;
 
     private Long id;
 
+    public RatingDto() {
+
+    }
     public RatingDto(double rating, Long userId, LocalDateTime date) {
         this.rating = rating;
         this.userId = userId;
         this.date = date;
+    }
+    public RatingDto(double rating, Long userId) {
+        this.rating = rating;
+        this.userId = userId;
+        this.date = LocalDateTime.now();
     }
 
     public Long getUserId(){
@@ -50,8 +52,10 @@ public class RatingDto {
     }
 
     public void setDate(LocalDateTime date){
-        this.date =date;
+        this.date = date;
     }
+
+    public void setCurrentDate(){this.date = LocalDateTime.now(); }
 
 
 

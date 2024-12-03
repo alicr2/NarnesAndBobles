@@ -11,6 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.OptionalLong;
 import java.util.stream.Collectors;
 
 @RestController
@@ -30,11 +32,11 @@ public class BookRatingController {
 
     // Rate a book
     @PostMapping("/{bookId}/rate")
-    public ResponseEntity<?> rateBook(@PathVariable Long bookId, @RequestBody RatingDto ratingDto) {
+    public ResponseEntity<?> rateBookByUserID(@PathVariable Long bookId, @RequestBody RatingDto ratingDto) {
+        if(ratingDto.getRating()>5 || ratingDto.getRating() < 1) return ResponseEntity.badRequest().body("Rating must be between 1 and 5.");
         bookService.addRating(bookId, ratingDto);
         return ResponseEntity.ok().build();
     }
-
 
     @PostMapping("/{bookId}/comment")
     public ResponseEntity<?> commentOnBook(@PathVariable Long bookId, @RequestBody CommentDto commentDto) {
@@ -54,6 +56,12 @@ public class BookRatingController {
     public ResponseEntity<Book> getBookById(@PathVariable Long bookId) {
         Book book = bookService.getBookById(bookId);
         return ResponseEntity.ok(book);
+    }
+
+    @GetMapping("/{bookId}/comments")
+    public ResponseEntity<List<CommentDto>> getCommentsForBook(@PathVariable Long bookId) {
+        List<CommentDto> comments = commentService.getCommentsForBook(bookId);  // Assuming this method exists in RatingService
+        return ResponseEntity.ok(comments);
     }
 
     @GetMapping("/{bookId}/ratings")
